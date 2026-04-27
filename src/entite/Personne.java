@@ -99,5 +99,4 @@ public class Personne {
     public void setUpdatedDate(Date updatedDate) {
         this.updatedDate = updatedDate;
     }
-
 }
