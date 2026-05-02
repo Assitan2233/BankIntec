@@ -1,5 +1,7 @@
 package entite;
 
+import java.util.Date;
+
 public class CompteEpargne extends Compte{
     private float taux;
 
@@ -28,8 +30,17 @@ public class CompteEpargne extends Compte{
         super.retirer(mt);
     }
 
+    public CompteEpargne(int code, float solde, int nbComptes, Date createdDate, Date updatedDate, float taux) {
+        super(code, solde, nbComptes, createdDate, updatedDate);
+        this.taux = taux;
+    }
+
     @Override
     public String toString() {
-        return super.toString();
+        String s =  "CompteEpargne{" +
+                "taux=" + taux +
+                '}';
+        System.out.println(s);
+        return s ;
     }
 }

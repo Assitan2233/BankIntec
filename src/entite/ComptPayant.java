@@ -1,12 +1,10 @@
 package entite;
 
-public class ComptPayant extends Compte{
-    public ComptPayant() {
-    }
+import java.util.Date;
 
-    @Override
-    public String toString() {
-        return "ComptPayant{}";
+public class ComptPayant extends Compte{
+
+     public ComptPayant() {
     }
 
     @Override
@@ -17,5 +15,16 @@ public class ComptPayant extends Compte{
     @Override
     public void retirer(float mt) {
         super.retirer(mt);
+    }
+
+    public ComptPayant(int code, float solde, int nbComptes, Date createdDate, Date updatedDate) {
+        super(code, solde, nbComptes, createdDate, updatedDate);
+    }
+
+    @Override
+    public String toString() {
+        String s =  "ComptPayant{}";
+        System.out.println(s);
+        return s ;
     }
 }

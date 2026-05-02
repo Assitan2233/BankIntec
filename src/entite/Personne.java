@@ -99,4 +99,21 @@ public class Personne {
     public void setUpdatedDate(Date updatedDate) {
         this.updatedDate = updatedDate;
     }
+
+    @Override
+    public String toString() {
+        String s = "Personne{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", age=" + age +
+                ", adresse='" + adresse + '\'' +
+                ", phone='" + phone + '\'' +
+                ", dateNaissance=" + dateNaissance +
+                ", createdDate=" + createdDate +
+                ", updatedDate=" + updatedDate +
+                '}';
+        System.out.println(s);
+        return  s ;
+    }
 }

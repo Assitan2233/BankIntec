@@ -36,6 +36,10 @@ public class CompteSimple extends Compte{
 
     @Override
     public String toString() {
-        return super.toString();
+       String s = "CompteSimple{" +
+                "decouvert=" + decouvert +
+                '}';
+        System.out.println(s);
+        return s ;
     }
 }
