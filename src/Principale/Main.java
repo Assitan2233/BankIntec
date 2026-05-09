@@ -63,34 +63,7 @@ public class Main {
         pa3.toString();
         pa4.toString();
         pa5.toString();
-        //Creation de la fenêtre
-        JFrame fenetre = new JFrame("Formulaire");
-        fenetre.setSize(500, 500);
-        fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        fenetre.setLayout(null);
 
-        // Label Nom
-        JLabel Nom = new JLabel("Nom :");
-        Nom.setBounds(30, 30, 80, 25);
-        fenetre.add(Nom);
-
-        // TextField Nom
-        JTextField txtNom = new JTextField();
-        txtNom.setBounds(120, 30, 120, 25);
-        fenetre.add(txtNom);
-
-        // Label Prénom
-        JLabel Prenom = new JLabel("Prénom :");
-        Prenom.setBounds(30, 70, 80, 25);
-        fenetre.add(Prenom);
-
-        // TextField Prénom
-        JTextField txtPrenom = new JTextField();
-        txtPrenom.setBounds(120, 70, 120, 25);
-        fenetre.add(txtPrenom);
-
-        // Afficher la fenêtre
-        fenetre.setVisible(true);
    }
 }
 
