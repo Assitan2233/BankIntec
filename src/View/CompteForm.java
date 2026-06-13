@@ -7,7 +7,6 @@ public class CompteForm {
         JFrame fenetre = new JFrame("BankIntec");
 
         public CompteForm() {
-
                 // Création de la fenêtre
                 fenetre.setSize(500, 350);
                 fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
